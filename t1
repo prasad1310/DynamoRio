@@ -1,0 +1,184 @@
+    mov_len = instr_length(dc, instrlist_first(ilist));
+./unix/native_elf.c
+instrlist_first(instrlist_t *ilist);
+./instrlist.h
+instrlist_first_expanded(2916,95973
+instrlist_first(179,5668
+./TAGS
+            if (instrlist_first(bb->ilist) != bb->instr) {
+    if (instrlist_first(bb->ilist) == NULL)
+    if (!instr_opcode_valid(instrlist_first(bb->ilist)) &&
+        instrlist_first(bb->ilist) == instrlist_last(bb->ilist)) {
+                                             instrlist_first(bb->ilist));
+            if (instrlist_first(bb->ilist) != bb->instr) {
+                    if (instrlist_first(bb->ilist) != bb->instr) {
+        instrlist_first(bb->ilist) == instrlist_last(bb->ilist)) {
+    instr= instrlist_first(bb->ilist);
+    instr= instrlist_first(bb->ilist);
+    for (in = instrlist_first(bb->ilist); in != NULL; in = instr_get_next(in))
+            instrlist_append(ilist, instrlist_first(bb));
+    for (in = instrlist_first(cil); in != NULL; in = instr_get_next(in)) {
+        for (cti = instrlist_first(&intra_ctis); cti != NULL;
+        start_instr = instrlist_first(trace);
+            for (in = instrlist_first(trace); in != NULL; in = instr_get_next(in)) {
+    instrlist_append(trace, instrlist_first(ilist));
+    for (inst = instrlist_first(ilist); inst != NULL; inst = next_inst) {
+    start_instr = instrlist_first(ilist);
+    for (inst = instrlist_first(ilist); inst != NULL; inst = next_inst) {
+    if (instrlist_first(&intra_ctis) != NULL) {
+        for (instr = instrlist_first_expanded(dcontext, ilist); instr != NULL;
+            for (cti = instrlist_first(&intra_ctis); cti != NULL;
+./x86/interp.c
+    instr = instrlist_first(trace);
+./x86/sideline.c
+        for (in = instrlist_first(il); in != NULL; in = instr_get_next(in))
+instrlist_first_expanded(dcontext_t *dcontext, instrlist_t *ilist)
+    instr_expand(dcontext, ilist, instrlist_first(ilist));
+    return instrlist_first(ilist);
+    for (instr = instrlist_first_expanded(dcontext, ilist);
+    for (instr = instrlist_first(ilist); instr != NULL;
+            for (tgt = instrlist_first(ilist); tgt != NULL; tgt = instr_get_next(tgt)) {
+        for (inst = instrlist_first(trace); inst != NULL; inst = next_inst) {
+./x86/instr.c
+    for (inst = instrlist_first(trace); inst != branch; inst = instr_get_next(inst)) {
+            for (check = instrlist_first(trace); check != inst;
+    for (inst = instrlist_first(trace); inst != branch; inst = instr_get_next(inst)) {
+            for (check = instrlist_first(trace); check != branch;
+    if (instrlist_first(&pre_loop) != NULL) {
+    inst = instrlist_first(trace);
+                    induction_var[i] = instrlist_first(trace);
+    inst = instrlist_first(trace);
+    inst = instrlist_first(trace);
+    for (inst = instrlist_first(trace); inst != branch; inst = instr_get_next(inst)) {
+    for (inst = instrlist_first(trace); inst != cmp;
+        for (inst = instrlist_first(trace); inst != cmp;
+    instr_set_target(branch, opnd_create_instr(instrlist_first(trace)));
+        inst = instrlist_first(trace);
+    for (inst = instrlist_first(trace); inst != NULL; inst = instr_get_next(inst)) {
+    for (inst = instrlist_first(trace); inst != NULL; inst = instr_get_next(inst)) {
+    for (inst = instrlist_first(trace); inst != NULL; inst = next_inst) {
+    for (inst = instrlist_first(trace); inst != NULL; inst = next) {
+    for (inst = instrlist_first(trace); inst != NULL; inst = next_inst) {
+    for (inst = instrlist_first(trace); inst != NULL; inst = next_inst) {
+    for (instr = instrlist_first(trace); instr != NULL; instr = next_inst) {
+    loopinstr=find_next_self_loop(dcontext,tag,instrlist_first(trace));
+    instr=instrlist_first(trace);
+    instr_t *top=instrlist_first(trace),*in;
+./x86/optimize.c
+    for (inst = instrlist_first(ilist); inst; inst = instr_get_next(inst)) {
+    for (inst = instrlist_first(ilist); inst; inst = instr_get_next(inst)) {
+    for (inst = instrlist_first(ilist); inst; inst = instr_get_next(inst)) {
+    for (in = instrlist_first(ilist); in != NULL;
+./x86/arch.c
+instrlist_first_expanded(dcontext_t *dcontext, instrlist_t *ilist);
+./x86/#instr.h#
+    for (in = instrlist_first(ilist); in != NULL; in = instr_get_next(in)) {
+    for (instr = instrlist_first_expanded(dcontext, trace);
+        in = instrlist_first(ilist);
+        in = instrlist_first(ilist);
+        app_flags_ok = instrlist_first(ilist);
+./x86/instrument.c
+    for (inst = instrlist_first(ilist); inst != NULL; inst = next_inst) {
+    for (inst = instrlist_first(ilist); inst != NULL; inst = instr_get_next(inst)) {
+    for (inst = instrlist_first(ilist); inst; inst = instr_get_next(inst)) {
+    for (inst = instrlist_first(ilist); inst; inst = instr_get_next(inst)) {
+    for (inst = instrlist_first(ilist); inst; inst = instr_get_next(inst)) {
+    for (inst = instrlist_first(&ilist); inst; inst = instr_get_next(inst)) {
+    for (in = instrlist_first(ilist); in != NULL; in = instr_get_next(in)) {
+    add_patch_marker(patch, instrlist_first(&ilist), PATCH_ASSEMBLE_ABSOLUTE, 
+    for (len = 0, in = instrlist_first(&ilist); in != NULL; in = instr_get_next(in)) {
+./x86/emit_utils.c
+instrlist_first_expanded(dcontext_t *dcontext, instrlist_t *ilist);
+./x86/instr.h
+        for (inst = instrlist_first(ilist); inst; inst = instr_get_next(inst)) {
+    for (inst = instrlist_first(ilist); inst != NULL; inst = instr_get_next(inst)) {
+./x86/encode.c
+        in = instrlist_first(ilist);
+            for (walk = instrlist_first_expanded(dcontext, ilist);
+    for (instr = instrlist_first(ilist);
+        for (instr = instrlist_first(ilist);
+        for (in = instrlist_first(ilist); in != NULL; in = instr_get_next(in)) {
+    instr = instrlist_first_expanded(dcontext, ilist);
+    instr = instrlist_first_expanded(dcontext, ilist);
+                for (inst = instrlist_first(&ilist); inst != NULL;
+        for (cti  = instrlist_first(ilist);
+            for (tgt  = instrlist_first(ilist);
+    for (instr  = instrlist_first(ilist);
+    for (instr  = instrlist_first(ilist);
+    top = instrlist_first(ilist);
+        top = instrlist_first(ilist);
+        top = instrlist_first(ilist);
+    for (instr  = instrlist_first(ci->ilist);
+    for (instr  = instrlist_first(ci->ilist);
+    instr = instrlist_first(callee);
+        instr = instrlist_first(callee);
+./x86/mangle.c
+    for (instr = instrlist_first(trace); instr!=NULL; instr = instr_get_next(instr)) {
+    has_back_arc=!!find_next_self_loop(dcontext,tag,instrlist_first(trace));
+    for (instr = instrlist_first(trace); instr!=NULL; instr = instr_get_next(instr)) {
+            for (accesschecker = instrlist_first(trace); accesschecker!=instr; 
+            for (writechecker = instrlist_first(trace); 
+        oldtracetop=instrlist_first(trace);
+    replace_self_loop_with_opnd(dcontext,instrlist_first(trace)->bytes,
+                                 trace,opnd_create_instr(instrlist_first(trace)));
+    instr_t *instr=instrlist_first(trace);
+        instrlist_first(trace)->bytes);
+    replace_self_loop_with_opnd(dcontext,(app_pc)instrlist_first(trace)->bytes,trace,opnd_create_pc(frag->tag));
+    top_safe=instrlist_first(trace); 
+    top_safe=instrlist_first(trace);
+    top_opt_bytes=(size_t)instrlist_first(opt_trace)->bytes; //save old top
+    ASSERT(instr_get_prev(instrlist_first(trace))==NULL);
+    replace_self_loop_with_opnd(dcontext,(app_pc)frag->tag,opt_trace,opnd_create_instr(instrlist_first(opt_trace)));
+    in=instrlist_first(trace);
+    for (instr = instrlist_first(trace); instr!=NULL; instr = instr_get_next(instr)) {
+                if (instr == instrlist_first(trace)) {
+    instr_t *top=instrlist_first(trace),*in;
+    in=instrlist_first(trace);
+            for (walker=instrlist_first(trace);walker;walker=instr_get_next(walker))
+    for (in=instrlist_first(trace);in;in=instr_get_next(in)) {
+    for (instr = instrlist_first(trace); instr!=NULL; instr = instr_get_next(instr)) {
+            newtarget=instrlist_first(instr->exitlist);
+./x86/loadtoconst.c
+    for (instr = instrlist_first(ilist); instr; instr = instr_get_next(instr)) {
+./x86/disassemble.c
+    for (instr = instrlist_first(ilist); instr != NULL; instr = instr_get_next(instr)) {
+    for (inst = instrlist_first(&ilist); inst; inst = instr_get_next(inst)) {
+    for (inst = instrlist_first(&ilist); inst; inst = instr_get_next(inst)) {
+    for (instr_new = instrlist_first(ilist); instr_new != NULL;
+            ASSERT_CURIOSITY(instr_new == instrlist_first(ilist) ||
+                             instr_new == instr_get_next(instrlist_first(ilist)));
+        for (in = instrlist_first(ilist); in != NULL; in = instr_get_next(in))
+    for (instr = instrlist_first(&ilist); instr != NULL; instr = instr_get_next(instr)) {
+./win32/callback.c
+    instr = instrlist_first_expanded(dcontext, ilist);
+./hotpatch.c
+    for (in = instrlist_first(ilist);
+    first = instrlist_first(ilist);
+./vmareas.c
+    while (NULL != (instr = instrlist_first(ilist))) {
+instrlist_first(instrlist_t *ilist)
+    inst = instrlist_first(old);
+    for (inst = instrlist_first(old), copy = instrlist_first(newlist);
+    for (inst = instrlist_first(old), copy = instrlist_first(newlist);
+    instr_t *first=instrlist_first(prependee);
+    instr_t *first=instrlist_first(appendee);
+./instrlist.c
+        if (instrlist_first(md->unmangled_bb_ilist) != NULL) {
+                             instrlist_first(md->unmangled_bb_ilist));
+    if (instrlist_first(&md->unmangled_ilist) != NULL)
+            instr = instrlist_first(trace);
+        ASSERT(instrlist_first(&md->unmangled_ilist) == NULL);
+./monitor.c
+            for (inst = instrlist_first(ilist); inst; inst = instr_get_next(inst)) {
+            for (inst = instrlist_first(ilist); inst; inst = instr_get_next(inst)) {
+./fragment.c
+    for (inst = instrlist_first(ilist); inst; inst = instr_get_next(inst)) {
+    ASSERT(instrlist_first(ilist) != NULL);
+    x86_mode = instr_get_x86_mode(instrlist_first(ilist));
+    for (inst = instrlist_first(ilist); inst; inst = instr_get_next(inst)) {
+        for (inst = instrlist_first(ilist); inst; inst = instr_get_next(inst)) {
+                    for (in = instrlist_first(custom); in; in = instr_get_next(in)) {
+    inst = instrlist_first(ilist);
+                    for (in = instrlist_first(custom); in; in = instr_get_next(in)) {
+                for (in = instrlist_first(custom); in; in = instr_get_next(in)) {
+./emit.c
